@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>AzureCloudTutorial</title>
+		<!-- Required meta tags -->
+    		<meta charset="utf-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<h1>Azure Cloud Tutorial</h1>
+		<div class="bar">
+			<a href="index.html">Home</a>
+			<a href="git.html">Git</a>
+			<a href="docker.html">Docker</a>
+			<a href="linux_cl.html">Linux Command Line</a>
+			<a href="azure.html">Azure</a>
+			<a href="vi.html" class="end">Vi</a>
+		</div>
+		<div class="content">
+			<h2> Azure Tutorial </h2>
+			<p>This will be a tutorial for setting up a website using azure. </p>
+			<h3> Azure </h3>
+			<ol>
+				<li> Log in to your Azure Microsoft Account </li>
+				<p> $ docker login azure </p>
+				<li> Create the docker context for Azure </li>
+				<p> $ docker context create aci azureCloud </p>
+				<li> Change the docker context to azureCloud </li>
+				<p> $ docker context use azureCloud </p>
+				<li> Run the docker image from the repo in docker hub </li>
+				<p> $ docker run -dp 80:80 username/repo </p>
+				<p> the port must be 80:80 for it to work </p>
+			        <li> List the running docker containers </li> 
+				<p> $ docker ps </p>
+				<li> Look at PORTS. Copy the website ip address 
+				which can look something like this, XX.XX.XXX.XXX. Paste the website ip address to the browser search bar. </li>
+			</ol>
+				<p> Congratulations, you created a website that the public can access. </p>
+			</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
+	</body>
+	</html>

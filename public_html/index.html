@@ -21,6 +21,31 @@
 		<div class="content">
 			<h2> Azure Tutorial </h2>
 			<p>This will be a tutorial for setting up a website using azure. </p>
+			<h3> Git </h3>
+			<ol>
+				<li> git clone https://github.com/kaw393939/apacheDocker.git </li>
+				<li> create seperate directory, I will call it azure. </li>
+				<li> Copy the apacheDocker contents to the azure directory </li>
+				<p> Copy these files in apacheDocker </p>
+				<ol>
+					<li> public_html </li>
+					<li> Dockerfile </li>
+					<li> dokcer-compose.yml </li>
+					<li> readme.md </li> 
+				</ol>				
+				<li> initialize the git repo </li>
+				<p> $ git init </p>
+				<li> Go to GitHub and create a repository </li>
+				<li> Add github repo to your local git repo </li>
+				<p> $ git remote set-url --add [repo_name] [repo-url] </p>
+				<li> add all the files in the directory to be in git repo </p>
+				<p> $ git add . </p>
+				<li> package the changes in the local repo </li>
+				<p> $ git commit -m "meaningful message" </p>
+				<li> Push the git repo changes to remote </li>
+				<p> $ git push </p>
+				<li> 
+			</ol>
 			<h3> Azure </h3>
 			<ol>
 				<li> Log in to your Azure Microsoft Account </li>
@@ -29,10 +54,12 @@
 				<p> $ docker context create aci azureCloud </p>
 				<li> Change the docker context to azureCloud </li>
 				<p> $ docker context use azureCloud </p>
+				<li> Build the doccker image from the repo in docker hub </li>
+				<p> $ docker build -t username/repo_name </p>
 				<li> Run the docker image from the repo in docker hub </li>
 				<p> $ docker run -dp 80:80 username/repo </p>
 				<p> the port must be 80:80 for it to work </p>
-			        <li> List the running docker containers </li> 
+			    <li> List the running docker containers </li> 
 				<p> $ docker ps </p>
 				<li> Look at PORTS. Copy the website ip address 
 				which can look something like this, XX.XX.XXX.XXX. Paste the website ip address to the browser search bar. </li>

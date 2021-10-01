@@ -25,7 +25,7 @@
 			<ol>
 				<li> Git clone a repository that gets the basse setup for docker</li>
 				<p> $ git clone https://github.com/kaw393939/apacheDocker.git </p>
-				<li> create seperate directory, I will call it azure. </li>
+				<li> Create seperate directory, I will call it azure. </li>
 				<li> Copy the apacheDocker contents and paste it to the azure directory </li>
 				<p> Copy these files in apacheDocker </p>
 				<ol>
@@ -34,14 +34,14 @@
 					<li> dokcer-compose.yml </li>
 					<li> readme.md </li> 
 				</ol>				
-				<li> initialize the git repo </li>
+				<li> Initialize the git repo </li>
 				<p> $ git init </p>
 				<li> Go to GitHub and create a new repository </li>
 				<li> Add github repo to your local git repo </li>
 				<p> $ git remote set-url --add [repo_name] [repo-url] </p>
-				<li> add all the files in the directory to be commited </p>
+				<li> Add all the files in the directory to be commited </p>
 				<p> $ git add . </p>
-				<li> package the changes in the local repo </li>
+				<li> Package the changes in the local repo </li>
 				<p> $ git commit -m "meaningful message" </p>
 				<li> Push the git repo changes to remote </li>
 				<p> $ git push </p>
@@ -58,7 +58,7 @@
 				<p> $ docker build -t username/repo_name </p>
 				<li> Run the docker image from the repo in docker hub </li>
 				<p> $ docker run -dp 80:80 username/repo </p>
-				<p> the port must be 80:80 for it to work </p>
+				<p> The port must be 80:80 for it to work </p>
 			    <li> List the running docker containers </li> 
 				<p> $ docker ps </p>
 				<li> Look at PORTS. Copy the website ip address 

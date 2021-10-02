@@ -23,17 +23,18 @@
 			<p>This will be a tutorial for setting up a website using azure. </p>
 			<h3> Git </h3>
 			<ol>
+				<li> Open a terminal. If using Windows, open git bash. </li>
+				<li> Change directory to your preferred location </li>
+				<pre class="command"> cd preferred_directory </pre>
 				<li> Git clone professor Keith Williams's repository that gets the base setup for docker:</li>
 				<pre class="command"> $ git clone https://github.com/kaw393939/apacheDocker.git</pre>
 				<li> Create a seperate directory, I will call it azure. </li>
+				<pre class="command">mkdir azure</pre>
 				<li> Copy the apacheDocker contents and paste it to the azure directory. </li>
-				<p> Copy these files in the apacheDocker: </p>
-				<ol>
-					<li> public_html </li>
-					<li> Dockerfile </li>
-					<li> dokcer-compose.yml </li>
-					<li> readme.md </li> 
-				</ol>				
+				<pre class="command">$ cp apacheDocker/Dockerfile azure </pre>
+				<pre class="command">$ cp apacheDocker/docker-compose.yml azure </pre>
+				<pre class="command">$ cp apacheDocker/public_html azure </pre>
+				<pre class="command">$ cp apacheDocker/readme.md azure </pre>				
 				<li> Initialize the git repo: </li>
 				<pre class="command"> $ git init </pre>
 				<li> Go to <a href="https://github.com/">GitHub</a> and create a new repository. </li>

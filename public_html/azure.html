@@ -36,7 +36,11 @@
 				<li> To log in to Azure for docker on the terminal </li>
 				<pre class="command"> $ docker login azure </pre>
 				<li> To create the docker context for Azure </li>
-				<pre class="command"> $ docker context create aci azureCloud </pre>
+				<pre class="command"> $ docker context create aci context-name </pre>
+				<li> Switch to the azure context created: </li>
+				<p class="command"> $ docker context use context-name </p>
+				<li> To release the resources of unused containers, networks, and imagaes while in the azureCloud context: </li>
+				<p class="command"> $ docker prune </p>
 			</ul>
 
 			</div>

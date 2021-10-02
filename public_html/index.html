@@ -23,43 +23,43 @@
 			<p>This will be a tutorial for setting up a website using azure. </p>
 			<h3> Git </h3>
 			<ol>
-				<li> Git clone professor Keith Williams's repository that gets the base setup for docker</li>
+				<li> Git clone professor Keith Williams's repository that gets the base setup for docker:</li>
 				<pre class="command"> $ git clone https://github.com/kaw393939/apacheDocker.git</pre>
-				<li> Create seperate directory, I will call it azure. </li>
-				<li> Copy the apacheDocker contents and paste it to the azure directory </li>
-				<p> Copy these files in apacheDocker </p>
+				<li> Create a seperate directory, I will call it azure. </li>
+				<li> Copy the apacheDocker contents and paste it to the azure directory. </li>
+				<p> Copy these files in the apacheDocker: </p>
 				<ol>
 					<li> public_html </li>
 					<li> Dockerfile </li>
 					<li> dokcer-compose.yml </li>
 					<li> readme.md </li> 
 				</ol>				
-				<li> Initialize the git repo </li>
+				<li> Initialize the git repo: </li>
 				<pre class="command"> $ git init </pre>
-				<li> Go to <a href="https://github.com/">GitHub</a> and create a new repository </li>
-				<li> Add github repo to your local git repo </li>
+				<li> Go to <a href="https://github.com/">GitHub</a> and create a new repository. </li>
+				<li> Add the remote repo to your local repo: </li>
 				<pre class="command"> $ git remote set-url --add [repo_name] [repo-url] </pre>
 				<li> Add all the files in the directory to be commited </li>
 				<pre class="command"> $ git add . </pre>
-				<li> Package the changes in the local repo </li>
+				<li> Package the changes in the local repo: </li>
 				<pre class="command"> $ git commit -m "meaningful message" </pre>
-				<li> Push the git repo changes to remote </li>
+				<li> Push the repo changes to the remote repo: </li>
 				<pre class="command"> $ git push </pre>
 			</ol>
 			<h3> Azure </h3>
 			<ol>
-				<li> Log in to your Azure Microsoft Account </li>
+				<li> Log in to your Azure Microsoft Account: </li>
 				<pre class="command"> $ docker login azure </pre>
-				<li> Create the docker context for Azure </li>
+				<li> Create the docker context for Azure: </li>
 				<pre class="command"> $ docker context create aci azureCloud </pre>
-				<li> Change the docker context to azureCloud </li>
+				<li> Change the docker context to azureCloud: </li>
 				<pre class="command"> $ docker context use azureCloud </pre>
-				<li> Build the doccker image from the repo in docker hub </li>
+				<li> Build the doccker image from the repo in docker hub: </li>
 				<pre class="command"> $ docker build -t username/repo_name </pre>
-				<li> Run the docker image from the repo in docker hub </li>
+				<li> Run the docker image from the repo in docker hub: </li>
 				<pre class="command"> $ docker run -dp 80:80 username/repo </pre>
 				<p> The port must be 80:80 for it to work </p>
-			    <li> List the running docker containers </li> 
+			    <li> List the running docker containers: </li> 
 				<pre class="command"> $ docker ps </pre>
 				<li> Look at PORTS. Copy the website ip address 
 				which can look something like this, XX.XX.XXX.XXX. Paste the website ip address to the browser search bar. </li>

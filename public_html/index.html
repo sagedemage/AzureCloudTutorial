@@ -25,11 +25,11 @@
 			<ol>
 				<li> Open a terminal. If using Windows, open Git Bash. </li>
 				<li> Change directory to your preferred location: </li>
-				<pre class="command"> cd preferred_directory </pre>
+				<pre class="command"> $ cd preferred_directory </pre>
 				<li> Clone professor Keith Williams's repository that gets the base setup for docker: </li>
 				<pre class="command"> $ git clone https://github.com/kaw393939/apacheDocker.git</pre>
 				<li> Create a seperate directory, I will call it azure: </li>
-				<pre class="command">mkdir azure</pre>
+				<pre class="command"> $ mkdir azure</pre>
 				<li> Copy the apacheDocker contents and paste it to the azure directory: </li>
 				<pre class="command">$ cp apacheDocker/Dockerfile azure </pre>
 				<pre class="command">$ cp apacheDocker/docker-compose.yml azure </pre>
@@ -52,12 +52,12 @@
 			<h3> Docker </h3>
 			<ol>
 				<li> Run pwd command to make sure you are in your repo: </li>
-				<pre class="command"> pwd </pre>
+				<pre class="command"> $ pwd </pre>
 				<li> Run docker container in the background: </li>
-				<pre class="command"> docker-compose up -d </pre>
+				<pre class="command"> $ docker-compose up -d </pre>
 				<li> Visit the website by going to <a href="http://localhost:8080"> http://localhost:8080 </a></li>
 				<li> Stop docker container: </li>
-				<pre class="command">docker-compose down </pre>
+				<pre class="command"> $ docker-compose down </pre>
 				<p> You should be able to create and run your docker container. </p> 
 			</ol>
 			
@@ -66,15 +66,15 @@
 				<li> Go to <a href="https://hub.docker.com/"> Docker Hub </a></li>
 				<li> Click on the "Create Repository" button. Give the repo a name and click on the "create" button. </li>
 				<li> Login in to the docker registry: </li>
-				<pre class="command"> docker login </pre>
+				<pre class="command"> $ docker login </pre>
 				<li> Run pwd command to make sure you are in your repo: </li>
-				<pre class="command"> pwd </pre>
+				<pre class="command"> $ pwd </pre>
 				<li> Push the local repo to docker hub: </li>
-				<pre class="command"> docker push username/repo_name </pre>
+				<pre class="command"> $ docker push username/repo_name </pre>
 				<li> Build docker container from Docker Hub: </li>
-				<pre class="command"> docker build -t username/repo_name </pre>
+				<pre class="command"> $ docker build -t username/repo_name </pre>
 				<li> Run docker container: </li>
-				<pre class="command"> docker run -dp 8080:80 username/repo_name </pre>
+				<pre class="command"> $ docker run -dp 8080:80 username/repo_name </pre>
 				<li> Visit the website by going to: http://localhost:8080:80 </li>
 			</ol>
 			

@@ -46,6 +46,34 @@
 				<li> Push the repo changes to the remote repo: </li>
 				<pre class="command"> $ git push </pre>
 			</ol>
+			
+			<h3> Docker </h3>
+			<ol>
+				<li> Run pwd to make sure you are in your repo </li>
+				<pre class="command"> pwd </pre>
+				<li> Run docker container in the background </li>
+				<pre class="command"> docker-compose up -d </pre>
+				<li> Visit the website by going to: http://localhost:8080 </li>
+				<li> Stop docker container </li>
+				<pre class="command">docker-compose down </pre>
+				<p> You should be able to create and run your docker container. </p> 
+			</ol>
+			
+			<h3> Docker Hub </h3>
+			<ol>
+				<li> Go to Docker Hub: <a href="https://hub.docker.com/"> DockerHub </a></li>
+				<li> Create Repository on Docker Hub </li>
+				<li> Login in to docker registry on the terminal: </li>
+				<pre class="command"> docker login </pre>
+				<li> push docker local repo to docker hub: </li>
+				<pre class="command"> docker push username/repo_name </pre>
+				<li> Build docker container from Docker Hub: </li>
+				<pre class="command"> docker build -t username/repo_name </pre>
+				<li> Run docker container: </li>
+				<pre class="command"> docker run -dp 8080:80 username/repo_name </pre>
+				<li> Visit the website by going to: http://localhost:8080:80 </li>
+			</ol>
+			
 			<h3> Azure </h3>
 			<ol>
 				<li> Log in to your Azure Microsoft Account: </li>
@@ -54,15 +82,17 @@
 				<pre class="command"> $ docker context create aci azureCloud </pre>
 				<li> Change the docker context to azureCloud: </li>
 				<pre class="command"> $ docker context use azureCloud </pre>
-				<li> Build the doccker image from the repo in docker hub: </li>
+				<li> Build the doccker image from Docker Hub: </li>
 				<pre class="command"> $ docker build -t username/repo_name </pre>
-				<li> Run the docker image from the repo in docker hub: </li>
+				<li> Run the docker container: </li>
 				<pre class="command"> $ docker run -dp 80:80 username/repo </pre>
 				<p> The port must be 80:80 for it to work </p>
 			    <li> List the running docker containers: </li> 
 				<pre class="command"> $ docker ps </pre>
 				<li> Look at PORTS. Copy the website ip address 
 				which can look something like this, XX.XX.XXX.XXX. Paste the website ip address to the browser search bar. </li>
+				<p>PORTS<br>
+				XX.XX.XXX.XXX:NN->NN/tcp</p>
 			</ol>
 				<p> Congratulations, you created a website that the public can access. </p>
 			</div>

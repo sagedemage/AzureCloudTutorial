@@ -91,6 +91,9 @@
 				<li> Run the docker container: </li>
 				<pre class="command"> $ docker run -dp 80:80 username/repo </pre>
 				<p> The port must be 80:80 for it to work in Azure </p>
+				<li> If you can't start the docker container, clear the resources then rerun the previous command: </li>
+				<pre class="command"> $ docker prune </pre>
+				<pre class="command"> $ docker run -dp 80:80 username/repo </pre>
 			    <li> List the running docker containers: </li> 
 				<pre class="command"> $ docker ps </pre>
 				<li> Look at PORTS. Copy the website ip address 

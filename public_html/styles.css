@@ -26,20 +26,21 @@ h1 {
 .content {
 	margin-left: 150px;
 	margin-right: 150px;
+	background-color: white;
 }
 
 .command {
 	color: black;
 	background-color: lightgray;
-	border-color: black; 
+	border-color: gray; 
 	border-style: solid;
 	border-width: 2px;
 	padding: 10px;
 }
 .output {
 	color: white;
-	background-color: black;
-	border-color: red;
+	background-color: gray;
+	border-color: black;
 	border-style: solid;
 	border-width: 2px;
 	padding: 10px;

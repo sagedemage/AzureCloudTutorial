@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Azure </title>
+		<!-- Required meta tags -->
+    		<meta charset="utf-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<h1>Azure Cloud Tutorial</h1>
+		<div class="bar">
+			<a href="index.html">Home</a>
+			<a href="git.html">Git</a>
+			<a href="docker.html">Docker</a>
+			<a href="linux_commands.html">Linux Commands</a>
+			<a href="azure.html">Azure</a>
+			<a href="vi.html" class="end">Vi</a>
+		</div>
+		<div class="content">
+			<h2> Azure </h2>
+			<p> Azure is a cloud computing service created by Microsoft. Microsoft's data centers run Azure. </p>
+			<h4> Create Azure Account </h4>
+			<ol>
+				<li> Get the <a href="https://azure.microsoft.com/en-us/free/students/">student edition of Azure </a> </li>
+				<li> Click the "start free" button. </li>
+				<li> Login to your student account or create microsoft student account using your college student email. </li>
+				<li> Go to <a href="https://azure.microsoft.com/en-us/"> Microsoft's Azure website </a> </li>
+				<li> Click the profile icon at the top right corner then click on the "Azure Portal" link </li>
+				<p> You should be at the Azure Portal. </p>
+			</ol>
+			<h4> Docker Azure Commands </h4>
+			<ul>
+				<li> To log in to Azure for docker </li>
+				<pre class="command"> $ docker login azure </pre>
+				<li> To create the docker context for Azure </li>
+				<pre class="command"> $ docker context create aci context-name </pre>
+				<li> Switch to the Azure context that was created: </li>
+				<pre class="command"> $ docker context use context-name </pre>
+				<li> To release the resources of unused containers, networks, and imagaes while in the Azure context: </li>
+				<pre class="command"> $ docker prune </pre>
+			</ul>
+
+			</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
+	</body>
+	</html>

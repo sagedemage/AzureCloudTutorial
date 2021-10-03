@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Linux Commands </title>
+		<!-- Required meta tags -->
+    		<meta charset="utf-8">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<h1>Azure Cloud Tutorial</h1>
+		<div class="bar">
+			<a href="index.html">Home</a>
+			<a href="git.html">Git</a>
+			<a href="docker.html">Docker</a>
+			<a href="linux_commands.html">Linux Commands</a>
+			<a href="azure.html">Azure</a>
+			<a href="vi.html" class="end">Vi</a>
+		</div>
+		<div class="content">
+			<h2> Linux Commands </h2>
+			<p> 
+			Linux is a family of open source Unix like operating systems based on the Linux kernel. 
+			The Linux kernel was created by Linus Torvards.   
+			This page will help you learn the various Linux commands that are useful for your terminal usage.
+			</p>
+			<ul>
+				<li> Open a terminal. If using Windows, open Git Bash. </li>
+				<li> If you do not have Git Bash, install <a href="https://git-scm.com/downloads"> Git </a></li>
+				<li> Print working directory: </li>
+				<pre class="command"> $ pwd </pre>
+				<li> Change directory: </li>
+				<pre class="command"> $ cd /home/username </pre>
+				<li> ~ = user directory </li>
+				<ul>
+					<li> user directory in windows: </li> 
+					<p> C:\Users\username </p>
+					<li> user directory in linux: </li> 
+					<p> /home/username </p>
+					<li> user directory in mac: </li> 
+					<p> /Users/username </p>
+				</ul>
+				<li> Print the active username: </li>
+				<pre class="command"> $ whoami </pre>
+				<li> Make directory: </li>
+				<pre class="command"> $ mkdir "folder" </pre>
+				<li> List files and directories on the directory you are on: </li>
+				<pre class="command"> $ ls </pre>
+				<li> List all the files and directories on the directory you are on: </li>
+				<pre class="command"> $ ls -a </pre> 
+				<p> This includes hidden files and directories that start with period. Ex: .config </p>
+				<li> List files and directories of a specified directory: </li>
+				<pre class="command"> $ ls /home/username </pre>
+				<li> Create an empty file: </li>
+				<pre class="command"> $ touch file.txt </pre>
+				<li> Open the file using the vi text editor: </li>
+				<pre class="command"> $ vi file.txt </pre>
+				<li> Display the file contents: </li>
+				<pre class="command"> $ cat file.txt </pre>
+				<li> Display the text: <li>
+				<pre class="command"> $ echo "this is echo" </pre>
+				<li> Move a file to a different directory: </li>
+				<pre class="command"> $ mv file.txt ~/file.txt </pre>
+				<li> Rename a file: </li>
+				<pre class="command"> $ mv file.txt file2.txt </pre>
+				<li> Remove a file: </li>
+				<pre class="command"> $ rm file.txt </pre>
+				<li> Remove an empty directory: </li>
+				<pre class="command"> $ rmdir folder </pre>
+				<li> Remove a non-empty directory that contains files and directories: </li>
+				<pre class="command"> $ rm -r folder </pre>
+				<li> Count the number of words in the text file: </li>
+				<pre class="command"> $ wc -w text.txt </pre>
+				<li> Count the number of lines in the text file: </li>
+				<pre class="command"> $ wc -l text.txt </pre>
+			</ul>
+			</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
+	</body>
+	</html>

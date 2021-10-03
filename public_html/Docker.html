@@ -35,14 +35,14 @@
 	comes at a great cost. However, containers take a different approac: by leveraging the low-level mechanics of the host operating system,<br>
 	containers provide most of the isolation of virtual machines at a fraction of the computing power.</p>
 	<h3>What are Docker Images?</h3>
-	<p>Docker images are the basis of containers and are similar to a git repository actually. Images can be committed with chagnes and have<br>
+	<p>Docker images are the basis of containers and are similar to a git repository actually. Images can be committed with changes and have<br>
 	multiple versions. If you don't pull a specific version number, the client defaults to the latest.</p>
 	<h3>Dockerfile</h3>
 	<p>A Dockerfile is a simple text file that contains a list of commands that the Docker client calls while creating an image. It's a <br>
 	simple way to automate the image creation process. Commands written in a Dockerfile are almost identical to Linux commands.</p>
 	<h3>Typical Terminology</h3>
 	<ul>
-		<li>Docker Daemon - The background service running on the host that manages building, running, and distributing Docker containers. The daemon is the process<br>
+		<li>Docker Daemon -The background service running on the host that manages building, running, and distributing Docker containers. The daemon is the process<br>
 			runs in the operating system which clients talk to.</li><br>
 		<li>Docker Client - The command line tool that allows the user to interact with the daemon. More generally, there can be other forms of clients too<br>
 			such as Kitematic which provide a GUI to the users</li><br>
@@ -53,17 +53,28 @@
 	<div id="list">
 		<h3>Docker Commands</h3>
 		<ul>
-			<li>docker pull [img_name] (used to pull images from the docker repository)</li><br>
-			<li>docker run -it -d [img_name] (used to create a container from an image)</li><br>
-			<li>docker ps (lists running containers)</li><br>
-			<li>docker exec -it [container_id] bash (used to access the running container)</li><br>
-			<li>docker stop [container_id] (stops a running container)</li><br>
-			<li>docker commit [container_id] [user_name/img_name] (creates a new image of an edited container on the local system)</li><br>
-			<li>docker push [user_name/img_name] (used to push an image to the docker hub repository)</li><br>
-			<li>docker images (lists all locally stored docker images)</li><br>
-			<li>docker rm [container_id] (used to delete a stopped container)</li><br>
-			<li>docker rmi [image_id] (used to delete an image from local storage)</li><br>
-			<li>docker build [path to docker file] (used to build an image from a specified docker file)</li><br>
+			<li>Used to pull images from the docker repository</li>
+			<pre class="command">docker pull [img_name]</pre>
+			<li>Used to create a container from an image</li>
+			<pre class="command">docker run -it -d [img_name]</pre>
+			<li>Lists running container</li>
+			<pre class="command">Lists running containers</pre>
+			<li>Used to access the running container</li>
+			<pre class="command">docker exec -it [container_id] bash</pre>
+			<li>Stops a running container</li>
+			<pre class="command">docker stop [container_id]</pre>
+			<li>Creates a new image of an edited container on the local system</li>
+			<pre class="command">docker commit [container_id] [user_name/img_name]</pre>
+			<li>Used to push an image to the docker hub repository</li>
+			<pre class="command">docker push [user_name/img_name]</pre>
+			<li>Lists all locally stored docker images</li>
+			<pre class="command"> docker images</pre>
+			<li>Used to delete a stopped container</li>
+			<pre class="command">docker rm [container_id]</pre>
+			<li>Used to delete an image from local storage</li>
+			<pre class="command">docker rmi [img_id]</pre>
+			<li>Used to build an image from a specified docker file</li>
+			<pre class="command">docker build [path to docker file]</pre>
 		</ul>
 		<h3>Additional Resources</h3>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/3c-iBn73dDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -59,25 +59,48 @@
 		normal mode, you can also use the keys in the list below. Some of these keys help keep you from<br>
 		laving the home row for the arrow keys, but most add handy and efficient navigation shortcuts</p>
 		<ul>
-			<li>j (moves the cursor down a line)</li>
-			<li>k (moves the cursor up a line)</li>
+			<li>j</li>
+			<pre class="command">Moves the Cursor down a line</pre>
+			<li>k</li>
+			<pre class="command">Moves the Cursor up a line</pre>
+			<li>h</li>
+			<pre class="command">Moves the Cursor to the left one character position</pre>
+			<li>l</li>
+			<pre class="command">Moves the Cursor to the right one character position</pre>
 		</ul>
 		<h3>Undo and Redo</h3>
-		<p>To undo a change, use the u command. You can then redo a change with :redo</p>
-		<h3>Copy, Cut, and Paste</h3>
-		<p>The base Vi command for copying is y, the list shows you a variety of ways you can quickly define<br>
-		what text gets copied</p>
-		<h3>Search and Replace</h3>
-		<p>Vi uses the / command to start a search. Once you enter the / command, you can begin entering your<br>
-		search text. Note that Vi's searches are case sensitive. Pressing enter once you have entered your search<br>
-		text takes you to the first instance of that text in the file. You can then navigate the search results using the<br>
-		n command to go forward and the N command to go backward
-		</p>
+		<ul>
+			<li>yy</li>
+			<pre class="command">Copies the current line</pre>
+			<li>p</li>
+			<pre class="command">Pastes the copied text after the Cursor</pre>
+		</ul>
+		<h3>Copy and Paste</h3>
+		
+ 		<ul>
+                        <li>yy</li>
+                        <pre class="command">Copies the current line</pre>
+                        <li>p</li>
+                        <pre class="command">Pastes the copied text after the Cursor</pre>
+                </ul>
+		<h3>String Search</h3>
+		<p>When you start these commands, the command just typed will be shown on the last line of the screen, where you type the particular string to look for</p>
+		<ul>
+			<li>/</li>
+			<pre class="command">Searches forwards (downwards) in the file</pre>
+			<li>?</li>
+			<pre class="command">Searches backwards (upwards) in the file</pre>
 		<h3>How to exit Vi</h3>
-		<p>To exit Vi, press esc if you're in normal mode then use the :q command.<br> Additionally, if you want to save your changes and exit in a single command,<br>
-		you can combine the two commands using, :wq<br>
-		You can also exit Vi without saving your changes. To do so, add a ! to the end of the quit command :q!</p>
-		</div>
+		<ul>
+			<li>:q</li>
+			<pre class="command">Quit</pre>
+			<li>:q!</li>
+			<pre class="command">Quit without saving</pre>
+			<li>:w</li>
+			<pre class="command">Save contents of the file</pre>
+			<li>:wq</li>
+			<pre class="command">Quits and saves contents</pre>
+	
 	</div>
 
 </body>

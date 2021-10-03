@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<link href="styles.css" rel="stylesheet">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <title>Docker</title>
+  </head>
+<body>
+	<h1>Azure Cloud Tutorial</h1>
+                <div class="bar">
+                        <a href="index.html">Home</a>
+                        <a href="git.html">Git</a>
+                        <a href="docker.html">Docker</a>
+                        <a href="linux_commands.html">Linux Commands</a>
+                        <a href="azure.html">Azure</a>
+                        <a href="vi.html" class="end">Vi</a>
+                </div>
+	<div class="content">
+		<h2>Docker Tutorial</h2>
+		<h3>Introduction:</h3>
+		<p>Docker is an open source containerization platform. Containerization is defined as a form of operating<br>
+		system virtualization, through which applications are run in isolate user spaces called containers, all using<br>
+		the same shared operating system. It enables developers to package applications<br>
+		into containers-standardized executable components combining application source code with the operating system<br>
+		libraries and dependecies required to run that code in any environment. Containers simplify delivery of distributed<br>
+		applications, and have become increasingly popular as organizations shift to cloud-native development and hybrid
+		multicloud environments</p>
+		<h3>Installation:</h3>
+		<p>Download <a href="https://www.docker.com/products/docker-desktop">Docker</a>
+		<h3>What are containers?</h3>
+		<p>The industry standard today is to use Virtual Machines (VMs) to run software applications. VMs run application inside a guest operating system,<br> 
+		which runs on virtual hardward powered by the server's host OS. VMs are great at providing full process isolation for applications: there are very<br>
+		ways a problem in the host operating system can affect the software running in the guest operating system, and vice-versa. Isolation<br>
+		comes at a great cost. However, containers take a different approac: by leveraging the low-level mechanics of the host operating system,<br>
+		containers provide most of the isolation of virtual machines at a fraction of the computing power.</p>
+		<h3>What are Docker Images?</h3>
+		<p>Docker images are the basis of containers and are similar to a git repository actually. Images can be committed with changes and have<br>
+		multiple versions. If you don't pull a specific version number, the client defaults to the latest.</p>
+		<h3>Dockerfile</h3>
+		<p>A Dockerfile is a simple text file that contains a list of commands that the Docker client calls while creating an image. It's a <br>
+		simple way to automate the image creation process. Commands written in a Dockerfile are almost identical to Linux commands.</p>
+		<h3>Typical Terminology</h3>
+		<ul>
+			<li>Docker Daemon -The background service running on the host that manages building, running, and distributing Docker containers. The daemon is the process<br>
+				runs in the operating system which clients talk to.</li><br>
+			<li>Docker Client - The command line tool that allows the user to interact with the daemon. More generally, there can be other forms of clients too<br>
+				such as Kitematic which provide a GUI to the users</li><br>
+			<li>Docker Hub - A registry of Docker images. You can think of the registry as a directory of all available Docker images. If required, one can host<br>
+			their own Docker registries and can use them for pulling images</li>
+		</ul>
+		<div id="list">
+			<h3>Docker Commands</h3>
+			<ul>
+				<li>Used to pull images from the docker repository</li>
+				<pre class="command">docker pull [img_name]</pre>
+				<li>Used to create a container from an image</li>
+				<pre class="command">docker run -it -d [img_name]</pre>
+				<li>Lists running container</li>
+				<pre class="command">Lists running containers</pre>
+				<li>Used to access the running container</li>
+				<pre class="command">docker exec -it [container_id] bash</pre>
+				<li>Stops a running container</li>
+				<pre class="command">docker stop [container_id]</pre>
+				<li>Creates a new image of an edited container on the local system</li>
+				<pre class="command">docker commit [container_id] [user_name/img_name]</pre>
+				<li>Used to push an image to the docker hub repository</li>
+				<pre class="command">docker push [user_name/img_name]</pre>
+				<li>Lists all locally stored docker images</li>
+				<pre class="command"> docker images</pre>
+				<li>Used to delete a stopped container</li>
+				<pre class="command">docker rm [container_id]</pre>
+				<li>Used to delete an image from local storage</li>
+				<pre class="command">docker rmi [img_id]</pre>
+				<li>Used to build an image from a specified docker file</li>
+				<pre class="command">docker build [path to docker file]</pre>
+			</ul>
+			<h3>Additional Resources</h3>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/3c-iBn73dDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<br>
+			<p><a href="https://docs.docker.com/cloud/aci-integration/">How to deploy Docker containers on Azure</a></p>
+		</div>
+</body>

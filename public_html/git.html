@@ -36,11 +36,11 @@
 		
 			<li>Open up Git Bash terminal</li>
 			<li>Enter your username</li>
-			<pre class="command">git config --global user.name [your_username]</pre>
+			<pre class="command">$ git config --global user.name [your_username]</pre>
 			<li>Enter your email</li>
-			<pre class="command"> git config --global user.email [your_email]</pre>
+			<pre class="command">$ git config --global user.email [your_email]</pre>
 			<li>Check if Git was properly configured</li>
-			<pre class="command">git configuration --global --list</pre>
+			<pre class="command">$ git configuration --global --list</pre>
 
 		</ol>
 		<h3>How to make a repository:</h3>
@@ -52,43 +52,43 @@
 			<li>Open the Git Bash terminal</li>
 			<li>Navigate to the directory of where you want the repository</li>
 			<li>Create a README.md file</li>
-			<pre class="command">touch README.md</pre>
+			<pre class="command">$ touch README.md</pre>
 			<li>Create a repository</li>
-			<pre class="command">git init</pre>
+			<pre class="command">$ git init</pre>
 			<li>Move README.md into staging area</li>
-			<pre class="command">git add README.md</pre>
+			<pre class="command">$ git add README.md</pre>
 			<li>Capture a snapshot of currently staged changes</li>
-			<pre class="command">git commit -m "first commit"</pre>
+			<pre class="command">$ git commit -m "first commit"</pre>
 			<li>Add a remote repository</li>
-			<pre class="command">git remote add origin git@github.com:your_username/<reponame>.git</pre>
+			<pre class="command">$ git remote add origin git@github.com:your_username/<reponame>.git</pre>
 			<li>Push changes to remote repository</li>
-			<pre class="command">git push -u origin master</pre>
+			<pre class="command">$ git push -u origin master</pre>
 		</ol>
 		<div id="list">
 			<h3>Git Commands</h3>
 			<ul>
 				<li>Commit any files you've added with the git add commit and also commits and files you've changed since then</li>
-				<pre class="command">git commit -a</pre>
+				<pre class="command">$ git commit -a</pre>
 				<li>Lists all files in directory</li>
-				<pre class="command">git status</pre>
+				<pre class="command">$ git status</pre>
 				<li>Deletes the file from your working directory and stages the deletion</li>
-				<pre class="command">git rm [file_name]</pre>
+				<pre class="command">$ git rm [file_name]</pre>
 				<li>lists all the local branches in the local repository</li>
-				<pre class="command">git branch</pre>
+				<pre class="command">$ git branch</pre>
 				<li>Creates new branch</li>
-				<pre class="command">git branch [branch_name]</pre>
+				<pre class="command">$ git branch [branch_name]</pre>
 				<li>Switches to specified branch</li>
-				<pre class="command">git checkout [branch_name]</pre>
+				<pre class="command">$ git checkout [branch_name]</pre>
 				<li>creates new branch but also switches to it)</li>
-				<pre class="command">git checkout -b [branch_name]</pre>
+				<pre class="command">$ git checkout -b [branch_name]</pre>
 				<li>Merges the specific branch's history into the current branch</li>
-				<pre class="command">git merge [branch_name]</pre>
+				<pre class="command">$ git merge [branch_name]</pre>
 				<li>Used to connect your local repository to the remote server</li>
-				<pre class="command">git remote add [variable_name] [remote_server_link]</pre>
+				<pre class="command">$ git remote add [variable_name] [remote_server_link]</pre>
 				<li>Sends the commmited changes of master branch to your remote repository</li>
-				<pre class="command">git push [variable_name] master</pre>
+				<pre class="command">$ git push [variable_name] master</pre>
 				<li>Fetches and merges changes on the remote server to your working directory</li>
-				<pre class="command">git pull [repository_name]</pre>
+				<pre class="command">$ git pull [repository_name]</pre>
 			</ul>
 		</div>
 	</div>

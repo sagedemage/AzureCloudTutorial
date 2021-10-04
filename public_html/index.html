@@ -73,7 +73,7 @@
 				<li> Push the local repo to docker hub: </li>
 				<pre class="command"> $ docker push username/repo_name </pre>
 				<li> Build docker container from Docker Hub: </li>
-				<pre class="command"> $ docker build -t username/repo_name </pre>
+				<pre class="command"> $ docker build -t username/repo_name . </pre>
 				<li> Run docker container: </li>
 				<pre class="command"> $ docker run -dp 8080:80 username/repo_name </pre>
 				<li> Visit the website by going to: http://localhost:8080:80 </li>
@@ -88,7 +88,7 @@
 				<li> Change the docker context to azureCloud: </li>
 				<pre class="command"> $ docker context use azureCloud </pre>
 				<li> Build the doccker image from Docker Hub: </li>
-				<pre class="command"> $ docker build -t username/repo_name </pre>
+				<pre class="command"> $ docker build -t username/repo_name . </pre>
 				<li> Run the docker container: </li>
 				<pre class="command"> $ docker run -dp 80:80 username/repo </pre>
 				<p> The port must be 80:80 for it to work in Azure </p>
